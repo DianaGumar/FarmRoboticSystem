@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#878787"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:gravity="center"
+        android:text="Map"
+        android:textSize="20sp"
+
+        android:textColor="#F1F1F1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:text="Create"
+            android:id="@+id/b_map_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="upload"
+            android:id="@+id/b_map_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Send"
+            android:background="#b94a59"
+            android:textColor="#f9feff"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/b_map_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_map_size"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Map size (x,y)"
+            android:textSize="20sp"
+            android:textColor="#F1F1F1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/te_size_x"
+            android:textSize="20sp"
+            android:textColor="#F1F1F1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/te_size_y"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#F1F1F1"
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="ok"
+            android:id="@+id/b_size_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_map_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
